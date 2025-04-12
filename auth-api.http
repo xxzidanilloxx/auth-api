@@ -1,0 +1,30 @@
+# Save partner
+POST http://localhost:8080/api/partners
+Content-Type: application/json
+
+{
+  "name": "Teste",
+  "email": "teste@teste.com",
+  "website": "teste.com"
+}
+
+###
+# Get all partners
+GET http://localhost:8080/api/partners
+Content-Type: application/json
+
+###
+# Update partner
+PUT http://localhost:8080/api/partners/1
+Content-Type: application/json
+
+{
+  "name": "Teste",
+  "email": "teste@teste.com",
+  "website": "teste.com.br"
+}
+
+###
+# Delete partner
+DELETE http://localhost:8080/api/partners/3
+Content-Type: application/json
